@@ -1,0 +1,79 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### בית
+https://example.com
+חן מחשבים היא חנות מחשבים מוביל עם מגוון עצום של מחשבים, חומרה ואביזרי טכנולוגיה. בין אם אתה מחפש מחשב גיימינג במחיר טוב או פתרון עסקי, אנחנו כאן בשבילך. בקר אצלנו עוד היום!
+
+### פתרונות ותמיכה
+https://example.com/solutions
+מחפש שדרוג מחשב נייח לגיימינג או תמיכה טכנית מקצועית? חן מחשבים מציעה פתרונות מותאמים אישית, שירות מהיר ואמין, וצוות מומחים שיעזור לך לקבל את הביצועים הטובים ביותר מהמחשב שלך. גלה את הפתרונות שלנו עכשיו!
+
+### אודות
+https://example.com/about
+חן מחשבים נוסדה מתוך אהבה אמיתית לטכנולוגיה ומחויבות לשירות לקוחות יוצא דופן. אנחנו גאים להיות חנות המחשבים הקרובה אליך עם צוות מנוסה שמבין את הצרכים שלך ומציע מחירים הוגנים. הכירו אותנו ותבינו למה אלפי לקוחות בוחרים בנו!
+
+### צור קשר
+https://example.com/contact
+יש לך שאלה על מחשב גיימינג במחיר טוב או צריך עזרה בבחירת הציוד הנכון? צוות חן מחשבים זמין עבורך! צור קשר עכשיו בטלפון, באימייל או בביקור בחנות וקבל ייעוץ מקצועי חינם ממומחי המחשבים שלנו. אל תחכה — נשמח לעזור!
+
+### Products
+https://example.com/products
+המוצרים שלנו - חן מחשבים
+
+### Cart
+https://example.com/cart
+עגלת הקניות שלך
+
+### Checkout
+https://example.com/checkout
+תשלום
+
+### Login
+https://example.com/login
+התחברות לקוחות
+
+### Account
+https://example.com/account
+החשבון שלי
+
+### Order Success
+https://example.com/order-success
+תודה על ההזמנה
+
+### Product Detail
+https://example.com/product/:slug
+פרטי המוצר - חן מחשבים
+
+### Category
+https://example.com/category/:slug
+מוצרים - חן מחשבים
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
