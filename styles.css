@@ -11560,6 +11560,233 @@ body.accessibility-widget-visible ._access-menu {
     display: none !important;
   }
 }
+
+/* Added Component Styles */
+/* ===== Gallery Section — חן מחשבים ===== */
+.gallery-chen {
+  direction: rtl;
+  font-family: system-ui, sans-serif;
+  background: #f0f4fb;
+  padding: 90px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle decorative background blob */
+.gallery-chen::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(44, 110, 210, 0.10) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.gallery-chen::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(44, 110, 210, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Container */
+.gallery-chen__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.gallery-chen__header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.gallery-chen__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary, #111827);
+  margin: 0 0 14px 0;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.gallery-chen__title span {
+  background: var(--gradient-primary, linear-gradient(180deg, #2C6ED2 0%, #1F5FBF 100%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gallery-chen__subtitle {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.6;
+  max-width: 560px;
+  margin-inline: auto;
+}
+
+/* Grid */
+.gallery-chen__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Card */
+.gallery-chen__card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(17, 24, 39, 0.08);
+  border: 1px solid rgba(44, 110, 210, 0.12);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-chen__card:hover,
+.gallery-chen__card:focus {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(44, 110, 210, 0.18);
+  border-color: rgba(44, 110, 210, 0.35);
+}
+
+/* Image wrapper */
+.gallery-chen__img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #e5eaf3;
+}
+
+.gallery-chen__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.42s ease;
+}
+
+.gallery-chen__card:hover .gallery-chen__img,
+.gallery-chen__card:focus .gallery-chen__img {
+  transform: scale(1.07);
+}
+
+/* Overlay */
+.gallery-chen__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(17, 24, 39, 0.55) 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 14px 16px;
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.gallery-chen__card:hover .gallery-chen__overlay,
+.gallery-chen__card:focus .gallery-chen__overlay {
+  opacity: 1;
+}
+
+.gallery-chen__overlay-icon {
+  font-size: 2rem;
+  line-height: 1;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
+}
+
+/* Card content */
+.gallery-chen__content {
+  padding: 22px 22px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gallery-chen__card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary, #111827);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.gallery-chen__card-desc {
+  font-size: 0.92rem;
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.65;
+  flex: 1;
+}
+
+/* Blue accent line under title */
+.gallery-chen__card-title::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background: var(--gradient-primary, linear-gradient(180deg, #2C6ED2 0%, #1F5FBF 100%));
+  border-radius: 2px;
+  margin-top: 8px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .gallery-chen__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  .gallery-chen__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-chen {
+    padding: 60px 16px;
+  }
+
+  .gallery-chen__header {
+    margin-bottom: 36px;
+  }
+
+  .gallery-chen__title {
+    font-size: 1.65rem;
+  }
+
+  .gallery-chen__subtitle {
+    font-size: 1rem;
+  }
+
+  .gallery-chen__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gallery-chen__content {
+    padding: 18px 18px 20px;
+  }
+
+  .gallery-chen__card-title {
+    font-size: 1.05rem;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
